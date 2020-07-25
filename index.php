@@ -19,6 +19,7 @@ class Partie
 
         public function resultat($choix, $choix_ordi)
             {              
+                //condition égalité
                 if($choix == $choix_ordi[0])
                     {                
                         $this->egalite++;
@@ -57,6 +58,7 @@ class Partie
                         $this->commentaire = "Tu as&nbsp;<b>perdu</b>&nbsp;: les ciseaux coupent la feuille";              
                     }                
             }
+        //image pour le joueur
         public function joueur($choix)
             {
                 if($choix == 1)
@@ -72,6 +74,7 @@ class Partie
                         return "<img src='image/$choix.png' alt='Ciseaux'/>";
                     }
             }
+        //image pour l'ordi
         public function ordi($choix_ordi)
             {
                 $ia = $choix_ordi[0];
@@ -103,11 +106,7 @@ class Partie
         public function getEgalite()
             {
                 return $this->egalite;
-            }
-        public function __destruct()
-            {
-                return 0;
-            }
+            }        
     }
 ?>
 
