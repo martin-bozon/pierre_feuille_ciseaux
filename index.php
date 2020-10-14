@@ -5,6 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/pfc.css"/>
+        <link rel="shortcut icon" href="image/1.jpg">
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="pfc.js"></script>
         <title>Pierre Feuille Ciseaux</title>

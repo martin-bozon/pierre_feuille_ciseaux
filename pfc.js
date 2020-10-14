@@ -17,8 +17,7 @@ $(document).ready(function()
         $('#egalite').html(Egalite);
 
         $('.jeu').click(function()
-            {     
-                console.log(Defaite);
+            {                     
                 // 1 = Pierre, 2 = Feuille, 3 = Ciseaux
                 var ordi = [1, 2, 3];
                 shuffle(ordi);
