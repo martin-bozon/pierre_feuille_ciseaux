@@ -7,7 +7,7 @@ if(isset($_POST["reset"]))
     {
         session_destroy();
         session_unset();
-        header('Location:index.php');
+        header('Location:../../index.php');
     }
 
 class Partie
@@ -140,7 +140,7 @@ class Partie
             <input type="submit" name="valider" value="Jouer">
             </form>          
             <form action="" method="POST">
-                <input type="submit" name="reset" value="Reset score">
+                <input type="submit" name="reset" value="Retour">
             </form>
         </section>       
         <section class="groupe">
@@ -185,6 +185,6 @@ class Partie
                     </tr>
                 </tbody>
             </table>
-        </section>                    
+        </section>                  
     </body>
 </html>
