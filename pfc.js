@@ -27,7 +27,7 @@ $(document).ready(function()
 
                 if(choix==choix_ordi)
                     {
-                        $('#resultat_js').html('Egalité');
+                        $('#resultat_js').html('<b>Egalité</b>');
                         $('#raison').html('');
                         Egalite++
                         $('#egalite').html(Egalite);
@@ -35,21 +35,21 @@ $(document).ready(function()
             // Victoire ordi
                 if(choix==1 && choix_ordi==2)
                     {
-                        $('#resultat_js').html('Vous avez perdu');
+                        $('#resultat_js').html('Vous avez <b>perdu</b>');
                         $('#raison').html('La Feuille englobe la Pierre');
                         Defaite++;
                         $('#defaite').html(Defaite);
                     }
                 if(choix==2 && choix_ordi==3)
                     {
-                        $('#resultat_js').html('Vous avez perdu');
+                        $('#resultat_js').html('Vous avez <b>perdu</b>');
                         $('#raison').html('Les Ciseaux coupent la Feuille');
                         Defaite++;
                         $('#defaite').html(Defaite);
                     }
                 if(choix==3 && choix_ordi==1)
                     {
-                        $('#resultat_js').html('Vous avez perdu');
+                        $('#resultat_js').html('Vous avez <b>perdu</b>');
                         $('#raison').html('La Pierre écrase les Ciseaux');
                         Defaite++;
                         $('#defaite').html(Defaite);
@@ -57,21 +57,21 @@ $(document).ready(function()
             //    Victoire Joueur
                 if(choix==1 && choix_ordi==3)
                     {
-                        $('#resultat_js').html('Vous avez gagné');
+                        $('#resultat_js').html('Vous avez <b>gagné</b>');
                         $('#raison').html('La Pierre écrase les Ciseaux');
                         Victoire++;
                         $('#victoire').html(Victoire);
                     }                    
                 if(choix==2 && choix_ordi==1)
                     {
-                        $('#resultat_js').html('Vous avez gagné');
+                        $('#resultat_js').html('Vous avez <b>gagné</b>');
                         $('#raison').html('La Feuille englobe la Pierre');
                         Victoire++;
                         $('#victoire').html(Victoire);
                     }                    
                 if(choix==3 && choix_ordi==2)
                     {
-                        $('#resultat_js').html('Vous avez gagné');
+                        $('#resultat_js').html('Vous avez <b>gagné</b>');
                         $('#raison').html('Les Ciseaux coupent la Feuille');
                         Victoire++;
                         $('#victoire').html(Victoire);
